@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+Test Details Visualization 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project aims to display test details fetched from a JSON file and visualize data using a chart component in a React application.
 
-## Available Scripts
+Introduction
+The project consists of JavaScript files for frontend components and a JSON file containing test details. Here's a brief overview of each file:
 
-In the project directory, you can run:
+ChartComponent.js: This file contains a React component responsible for rendering a chart using the Chart.js library. It fetches data from data.json and displays it in the form of a chart.
 
-### `npm start`
+App.js: The main React component responsible for fetching test details from data.json and passing them to the DataDisplay component.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+data.json: JSON file containing test details such as Test ID, Run Date, Description, Test Type, Peak Number, Peak Duration, Valid Test Run, and Status.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Installation
+To set up the project locally, follow these steps:
 
-### `npm test`
+1. Clone the repository to your local machine using the following command:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+git clone https://github.com/Sindhoorap/Test-Details.git
 
-### `npm run build`
+2. Navigate to the project directory using the terminal:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+cd Test-Details
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Run npm install to install dependencies.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Usage
+Once the installation is complete, you can run the project by executing npm start in the terminal. This will start the development server and open the application in your default web browser. You can then view the test details and visualizations provided by the application.
 
-### `npm run eject`
+Dependencies
+The project relies on the following dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. React.js
+2. Chart.js
+3. Other dependencies specified in package.json
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Contributing
+Contributions to this project are welcome! If you have any suggestions, bug fixes, or feature implementations, feel free to open an issue or submit a pull request.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
