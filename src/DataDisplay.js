@@ -29,14 +29,14 @@ function DataDisplay({ testDetails }) {
                         <thead>
                             <tr>
                                 {Object.keys(selectedTestDetail).map(key => (
-                                    <th key={key}>{key}</th>
+                                    <th key={key} style={{ fontWeight: 'bold', backgroundColor: 'lightgrey', padding: '5px' }}>{key}</th>
                                 ))}
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 {Object.keys(selectedTestDetail).map(key => (
-                                    <td key={key}>{selectedTestDetail[key]}</td>
+                                    <td key={key} style={{ padding: '10px' }}>{selectedTestDetail[key]}</td>
                                 ))}
                             </tr>
                         </tbody>
