@@ -13,12 +13,15 @@ function DataDisplay({ testDetails }) {
         setSelectedTestDetail(selectedDetail);
     };
 
+    // Remove the selected test ID from the list of options
+    const filteredTestDetails = testDetails.filter(detail => detail.TestId !== parseInt(selectedTestId));
+
     return (
         <div>
             <h1>Test Details</h1>
             <select value={selectedTestId} onChange={handleTestIdChange}>
                 <option value="">Select TestId</option>
-                {testDetails.map(detail => (
+                {filteredTestDetails.map(detail => (
                     <option key={detail.TestId} value={detail.TestId}>{detail.TestId}</option>
                 ))}
             </select>
@@ -29,7 +32,7 @@ function DataDisplay({ testDetails }) {
                         <thead>
                             <tr>
                                 {Object.keys(selectedTestDetail).map(key => (
-                                    <th key={key} style={{ fontWeight: 'bold', backgroundColor: 'lightgrey', padding: '5px' }}>{key}</th>
+                                    <th key={key} style={{ fontWeight: 'bold', backgroundColor: 'lightgrey', padding: '10px' }}>{key}</th>
                                 ))}
                             </tr>
                         </thead>
